@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- chat session division  -->
+      <div class="chat-session" id="chat">
+        <!-- navbar for operticular section  -->
+        <nav class="navbar">
+          <span>CHAT SESSIONS</span>
+          <span class="clos-button session-clos-button" id="hidebutton">
+            <img src="./images/ic_close.png" alt="close-button" />
+          </span>
+        </nav>
+
+        <!-- users division  -->
+        <div class="friends" id="friends-collection">
+          <!-- <div class="friend">
+            <div class="about-friend">
+              <img src="./images/avatar.png" alt="avatar-image" />
+              <div class="name-about">
+                <p>John Vick</p>
+                <span>Web developer</span>
+              </div>
+            </div>
+            <div class="time-stamp">
+              <p>4Min Ago</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- chat details sections  -->
+      <div class="chat-details">
+        <!-- navbar for operticular section  -->
+        <nav class="navbar">
+          <!-- toggle button for mobile view  -->
+          <div class="toggle">
+            <label for="toggle">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2976/2976215.png"
+                alt="bars"
+            /></label>
+            <input type="checkbox" id="toggle" class="toggle-button" />
+          </div>
+          <span>CHAT DETAILS</span>
+          <span class="clos-button">
+            <img src="./images/ic_close.png" alt="close-button" />
+          </span>
+        </nav>
+        <!-- division for messages  -->
+        <div class="message-container">
+          <!-- active user chat  -->
+          <div class="active-user" id="active-user">
+            <!-- <div class="image-name-about">
+              <img src="./images/avatar2.jpeg" alt="active_user_image" />
+              <div class="active-user-profile">
+                <p>John Vick</p>
+                <span>Web developer</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="message-display">
+            <!-- <div class="text-message"> -->
+            <div class="messages" id="messages">
+              <h1 class="No-message">Tap One Contact To See Messages</h1>
+              <!-- <div class="msg">
+              <p>this is message!! How can i help you...</p>
+            </div> -->
+            </div>
+            <div class="textarea">
+              <textarea
+                name="textbox"
+                id="textarea"
+                cols="30"
+                rows="4"
+                placeholder="johndoe@gmail.com"
+              ></textarea>
+              <button type="submit" id="textarea-btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- adding script file  -->
+    <script src="./index.js"></script>
+  </body>
+</html>

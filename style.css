@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* main container  */
+.container {
+  height: 100vh;
+  width: 1170px;
+  margin: 1rem auto;
+  display: flex;
+  border: 1px solid rgb(224, 224, 224);
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  background: #00a0ae 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.navbar span {
+  font: normal normal 600 18px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+/* chat sessions or chats begins  */
+.container .chat-session {
+  width: 370px;
+  height: 100%;
+  border-right: 2px solid white;
+}
+.friends {
+  height: 90%;
+  width: 100%;
+}
+.friends .friend {
+  height: 80px;
+  border: 2px solid #fff;
+  background: #f5f6fa 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+.friend .about-friend {
+  display: flex;
+  align-items: center;
+}
+.friend .about-friend img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.about-friend .name-about {
+  padding-left: 1rem;
+}
+.name-about p {
+  min-width: 71px;
+  height: 17px;
+  text-align: left;
+  font: normal normal bold 13px/17px Source Sans Pro;
+  color: #4d4f5c;
+  opacity: 1;
+}
+.name-about span {
+  width: 194px;
+  height: 14px;
+  text-align: left;
+  font: normal normal normal 11px/13px Source Sans Pro;
+  color: #43425d;
+}
+.friend .time-stamp {
+  width: 53px;
+  height: 14px;
+  font: normal normal normal 11px/13px Source Sans Pro;
+  color: #43425d;
+}
+.color {
+  color: gold;
+}
+
+/* chat sessions ends  */
+.toggle-chat-session {
+  margin-left: 100%;
+}
+/* toggle button for mobile view  */
+.toggle {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  display: none;
+}
+.toggle input {
+  display: none;
+}
+.toggle img {
+  height: 100%;
+  width: 100%;
+}
+#hidebutton {
+  display: none;
+}
+/* chat details section begins  */
+.chat-details {
+  width: 800px;
+  height: 100%;
+}
+
+/* message containers begins  */
+.message-display {
+  height: 572px;
+  position: relative;
+}
+.No-message {
+  text-align: center;
+  padding-top: 20%;
+  color: #00a0ae;
+}
+.message-container {
+  position: relative;
+}
+.messages {
+  padding-top: 1rem;
+  height: 450px;
+  overflow: scroll;
+}
+.msg {
+  min-height: 35px;
+  max-width: 50%;
+  margin: 5px;
+  padding: 0.4rem 1rem;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  background: #f5f6fa 0% 0% no-repeat padding-box;
+  text-align: justify;
+  position: relative;
+}
+.msg:nth-child(2n + 1) {
+  min-height: 35px;
+  background: #f5f6fa;
+  color: #4d4f5c;
+  background: #f5f6fa 0% 0% no-repeat padding-box;
+  border-radius: 18px 18px 18px 0px;
+  margin: 1rem 1.5rem;
+}
+.msg:nth-child(2n) {
+  min-height: 35px;
+  color: #ffffff;
+  justify-content: end;
+  background: #00a0ae 0% 0% no-repeat padding-box;
+  border-radius: 18px 18px 0px 18px;
+  opacity: 1;
+  left: 46%;
+}
+
+/* active user profile  */
+.active-user {
+  top: 63px;
+  left: 370px;
+  width: 800px;
+  height: 72px;
+  border-bottom: 1px solid lightgrey;
+}
+.image-name-about {
+  width: auto;
+  position: relative;
+  display: flex;
+  margin: 5px;
+  padding-left: 30px;
+}
+.image-name-about img {
+  width: 60px;
+  height: 60px;
+  background: transparent url("img/Avatar.png") 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+}
+.image-name-about::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #5ee2a0 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  bottom: 5px;
+}
+.image-name-about .active-user-profile {
+  padding: 15px 19px 0;
+}
+.active-user-profile p {
+  font: normal normal normal 18px/13px Source Sans Pro;
+  color: #4d4f5c;
+  opacity: 1;
+  margin-bottom: 6px;
+}
+.active-user-profile span {
+  font: normal normal normal 15px/25px Source Sans Pro;
+  color: #43425d;
+  opacity: 0.5;
+}
+.textarea {
+  width: 100%;
+  height: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f5f6fa 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+}
+.textarea textarea {
+  width: 85%;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.textarea button {
+  width: 70px;
+  height: 32px;
+  color: #ffff;
+  border: none;
+  background: #00a0ae 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+}
+.toggle-button:checked ~ .chat-session {
+  margin-left: 100px;
+}
+
+/* media query: Desktop Tablet and Mobile View */
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar {
+    height: 40px;
+    padding: 0 0.8rem;
+  }
+  .navbar span {
+    font: normal normal 600 15px/18px Source Sans Pro;
+  }
+  /* chat sessions or chats begins  */
+  .chat-session {
+    width: 250px;
+  }
+  .friends {
+    height: auto;
+  }
+  .friends .friend {
+    height: 90px;
+    padding: 2px;
+  }
+  .friend .about-friend img {
+    height: 45px;
+    width: 45px;
+  }
+  .about-friend .name-about {
+    padding-left: 0.7rem;
+  }
+  .name-about p {
+    font: normal normal bold 13px/15px Source Sans Pro;
+  }
+  .name-about span {
+    font: normal normal normal 11px/12px Source Sans Pro;
+  }
+  .friend .time-stamp {
+    padding-top: 1.3rem;
+  }
+  /* chat sessions ends  */
+
+  /* chat details section begins  */
+  .chat-details {
+    width: 550px;
+  }
+
+  /* active user profile  */
+  .active-user {
+    width: 100%;
+    height: 60px;
+  }
+  .image-name-about {
+    padding-left: 15px;
+  }
+  .image-name-about img {
+    width: 45px;
+    height: 45px;
+  }
+  .image-name-about::after {
+    width: 9px;
+    height: 9px;
+    left: 10%;
+    bottom: 8px;
+  }
+  .image-name-about .active-user-profile {
+    padding: 10px 12px 0;
+  }
+  .active-user-profile p {
+    font: normal normal normal 14px/11px Source Sans Pro;
+  }
+  .active-user-profile span {
+    font: normal normal normal 13px/22px Source Sans Pro;
+  }
+  .textarea {
+    height: 102px;
+  }
+  .textarea textarea {
+    width: 85%;
+  }
+  .textarea button {
+    width: 50px;
+    height: 32px;
+  }
+}
+
+/* mobile view  max width 480px */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar {
+    height: 40px;
+  }
+  .navbar span {
+    font: normal normal 600 16px/18px Source Sans Pro;
+  }
+  .toggle {
+    display: block;
+  }
+  .clos-button {
+    display: none;
+  }
+  #hidebutton {
+    display: block;
+  }
+  /* chat sessions or chats begins  */
+  .chat-session {
+    display: none;
+  }
+  .friends {
+    height: auto;
+  }
+  .friends .friend {
+    height: 60px;
+    padding: 10px;
+  }
+  .about-friend .name-about {
+    padding-left: 0.8rem;
+  }
+  .name-about p {
+    height: 15px;
+    font: normal normal bold 12px/14px Source Sans Pro;
+  }
+  .name-about span {
+    font: normal normal normal 10px/11px Source Sans Pro;
+  }
+  .friend .time-stamp {
+    height: auto;
+    font: normal normal normal 11px/12px Source Sans Pro;
+    margin-top: -1.2rem;
+  }
+  /* chat details section begins  */
+  .chat-details {
+    width: 100%;
+  }
+  .msg:nth-child(2n + 1) {
+    width: 80%;
+  }
+  .msg:nth-child(2n) {
+    width: 80%;
+    left: 43%;
+  }
+  /* message containers begins  */
+  .message-container {
+    min-height: 300px;
+  }
+
+  /* active user profile  */
+  .active-user {
+    width: 100%;
+    height: 52px;
+  }
+  .image-name-about {
+    margin: 5px;
+    padding-left: 10px;
+  }
+  .image-name-about img {
+    width: 47px;
+    height: 47px;
+  }
+  .image-name-about::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    left: 12%;
+    bottom: 5px;
+  }
+  .image-name-about .active-user-profile {
+    padding: 8px 15px 0;
+  }
+  .active-user-profile p {
+    font: normal normal normal 15px/11px Source Sans Pro;
+    margin-bottom: 3px;
+  }
+  .active-user-profile span {
+    font: normal normal normal 12px/20px Source Sans Pro;
+  }
+  .textarea {
+    height: 100px;
+  }
+  .textarea textarea {
+    width: 75%;
+    height: 50px;
+  }
+  .textarea button {
+    width: 55px;
+    height: 30px;
+    color: #ffff;
+  }
+  .chat {
+    display: none;
+  }
+  .session-clos-button {
+    display: block;
+  }
+}
